@@ -10,7 +10,7 @@ These icons represent specific mathematical topics and are matched to the chapte
 | **activation_deriv**<br>*Activation Derivative* | ![activation_deriv](images/icons/activation_deriv.png) | Static Only | Shows the local slope of a nonlinear activation, used when explaining backpropagation and chain-rule gradients. |
 | **bayes**<br>*Bayes' Rule* | ![bayes](images/icons/bayes.png) | Static Only | Represents updating a prior belief into a posterior after observing evidence. |
 | **bellman**<br>*Bellman Equation* | ![bellman](images/icons/bellman.png) | Static Only | Summarizes recursive value decomposition in dynamic programming and reinforcement learning. |
-| **brownian_motion**<br>*Brownian Motion* | ![brownian_motion](images/icons/brownian_motion.png) | Static Only | Represents continuous random motion, the noise source behind many SDE and diffusion models. |
+| **brownian_motion**<br>*Brownian Motion* | ![brownian_motion](images/icons/brownian_motion.png) | ![brownian_motion gif](images/icons/brownian_motion.gif) | Represents continuous random motion, the noise source behind many SDE and diffusion models. |
 | **chain_rule**<br>*Chain Rule* | ![chain_rule](images/icons/chain_rule.png) | Static Only | Shows how derivatives compose through nested functions and computational graphs. |
 | **cholesky**<br>*Cholesky Decomposition* | ![cholesky](images/icons/cholesky.png) | Static Only | Represents factoring a positive-definite matrix into triangular factors. |
 | **column_row_space**<br>*Column And Row Spaces* | ![column_row_space](images/icons/column_row_space.png) | Static Only | Highlights the fundamental subspaces associated with a matrix. |
@@ -32,7 +32,7 @@ These icons represent specific mathematical topics and are matched to the chapte
 | **jacobian**<br>*Jacobian* | ![jacobian](images/icons/jacobian.png) | Static Only | Represents the matrix of first derivatives for a vector-valued map. |
 | **kl**<br>*KL Divergence* | ![kl](images/icons/kl.png) | Static Only | Represents the directed mismatch between two probability distributions. |
 | **kronecker**<br>*Kronecker Product* | ![kronecker](images/icons/kronecker.png) | Static Only | Shows block-structured multiplication between matrices. |
-| **langevin_sampling**<br>*Langevin Sampling* | ![langevin_sampling](images/icons/langevin_sampling.png) | Static Only | Represents gradient-guided noisy sampling from an energy or probability density. |
+| **langevin_sampling**<br>*Langevin Sampling* | ![langevin_sampling](images/icons/langevin_sampling.png) | ![langevin_sampling gif](images/icons/langevin_sampling.gif) | Represents gradient-guided noisy sampling from an energy or probability density. |
 | **level_set_normal**<br>*Gradient Normal to a Level Set* | ![level_set_normal](images/icons/level_set_normal.png) | Static Only | No description provided. |
 | **markov**<br>*Markov Chain* | ![markov](images/icons/markov.png) | Static Only | Shows state transitions where the next state depends only on the current state. |
 | **matrix_exponential**<br>*Matrix Exponential* | ![matrix_exponential](images/icons/matrix_exponential.png) | Static Only | Represents exp(A), the operator used to solve linear differential equations. |
@@ -107,10 +107,10 @@ These stylized icons are used to render key legends and specialized color coding
 | **ctmc**<br>*Ctmc* | ![ctmc](images/icons/ctmc.png) | Static Only | No description provided. |
 | **ddim**<br>*Ddim* | ![ddim](images/icons/ddim.png) | Static Only | No description provided. |
 | **definiteness**<br>*Definiteness* | ![definiteness](images/icons/definiteness.png) | Static Only | No description provided. |
-| **denoising**<br>*Denoising* | ![denoising](images/icons/denoising.png) | Static Only | No description provided. |
-| **density_evolution**<br>*Density Evolution* | ![density_evolution](images/icons/density_evolution.png) | Static Only | No description provided. |
+| **denoising**<br>*Denoising* | ![denoising](images/icons/denoising.png) | ![denoising gif](images/icons/denoising.gif) | No description provided. |
+| **density_evolution**<br>*Density Evolution* | ![density_evolution](images/icons/density_evolution.png) | ![density_evolution gif](images/icons/density_evolution.gif) | No description provided. |
 | **detailed_balance**<br>*Detailed Balance* | ![detailed_balance](images/icons/detailed_balance.png) | Static Only | No description provided. |
-| **diffusion_scores**<br>*Diffusion Scores* | ![diffusion_scores](images/icons/diffusion_scores.png) | Static Only | No description provided. |
+| **diffusion_scores**<br>*Diffusion Scores* | ![diffusion_scores](images/icons/diffusion_scores.png) | ![diffusion_scores gif](images/icons/diffusion_scores.gif) | No description provided. |
 | **diffusion_unify**<br>*Diffusion Unify* | ![diffusion_unify](images/icons/diffusion_unify.png) | Static Only | No description provided. |
 | **duality**<br>*Duality* | ![duality](images/icons/duality.png) | Static Only | No description provided. |
 | **ebm**<br>*Ebm* | ![ebm](images/icons/ebm.png) | Static Only | No description provided. |
@@ -125,8 +125,8 @@ These stylized icons are used to render key legends and specialized color coding
 | **fast_sampler**<br>*Fast Sampler* | ![fast_sampler](images/icons/fast_sampler.png) | Static Only | No description provided. |
 | **fisher_divergence**<br>*Fisher Divergence* | ![fisher_divergence](images/icons/fisher_divergence.png) | Static Only | No description provided. |
 | **fisher_info**<br>*Fisher Info* | ![fisher_info](images/icons/fisher_info.png) | Static Only | No description provided. |
-| **flow_attractors**<br>*Flow Attractors* | ![flow_attractors](images/icons/flow_attractors.png) | Static Only | No description provided. |
-| **forward_diffusion**<br>*Forward Diffusion* | ![forward_diffusion](images/icons/forward_diffusion.png) | Static Only | No description provided. |
+| **flow_attractors**<br>*Flow Attractors* | ![flow_attractors](images/icons/flow_attractors.png) | ![flow_attractors gif](images/icons/flow_attractors.gif) | No description provided. |
+| **forward_diffusion**<br>*Forward Diffusion* | ![forward_diffusion](images/icons/forward_diffusion.png) | ![forward_diffusion gif](images/icons/forward_diffusion.gif) | No description provided. |
 | **generative_compare**<br>*Generative Compare* | ![generative_compare](images/icons/generative_compare.png) | Static Only | No description provided. |
 | **gmm**<br>*Gmm* | ![gmm](images/icons/gmm.png) | Static Only | No description provided. |
 | **gptq_hessian**<br>*Gptq Hessian* | ![gptq_hessian](images/icons/gptq_hessian.png) | Static Only | No description provided. |
@@ -142,7 +142,7 @@ These stylized icons are used to render key legends and specialized color coding
 | **kkt**<br>*Kkt* | ![kkt](images/icons/kkt.png) | Static Only | No description provided. |
 | **kron_properties**<br>*Kron Properties* | ![kron_properties](images/icons/kron_properties.png) | Static Only | No description provided. |
 | **langevin_equation**<br>*Langevin Equation* | ![langevin_equation](images/icons/langevin_equation.png) | Static Only | No description provided. |
-| **langevin_step**<br>*Langevin Step* | ![langevin_step](images/icons/langevin_step.png) | Static Only | No description provided. |
+| **langevin_step**<br>*Langevin Step* | ![langevin_step](images/icons/langevin_step.png) | ![langevin_step gif](images/icons/langevin_step.gif) | No description provided. |
 | **latent_model**<br>*Latent Model* | ![latent_model](images/icons/latent_model.png) | Static Only | No description provided. |
 | **ldlt_decomposition**<br>*Ldlt Decomposition* | ![ldlt_decomposition](images/icons/ldlt_decomposition.png) | Static Only | No description provided. |
 | **lin_indep**<br>*Lin Indep* | ![lin_indep](images/icons/lin_indep.png) | Static Only | No description provided. |
@@ -153,19 +153,19 @@ These stylized icons are used to render key legends and specialized color coding
 | **mala**<br>*Mala* | ![mala](images/icons/mala.png) | Static Only | No description provided. |
 | **mdp**<br>*Mdp* | ![mdp](images/icons/mdp.png) | Static Only | No description provided. |
 | **mean_field**<br>*Mean Field* | ![mean_field](images/icons/mean_field.png) | Static Only | No description provided. |
-| **noise_exploration**<br>*Noise Exploration* | ![noise_exploration](images/icons/noise_exploration.png) | Static Only | No description provided. |
+| **noise_exploration**<br>*Noise Exploration* | ![noise_exploration](images/icons/noise_exploration.png) | ![noise_exploration gif](images/icons/noise_exploration.gif) | No description provided. |
 | **nonlinear_activation**<br>*Nonlinear Activation* | ![nonlinear_activation](images/icons/nonlinear_activation.png) | Static Only | No description provided. |
 | **null_space**<br>*Null Space* | ![null_space](images/icons/null_space.png) | Static Only | No description provided. |
 | **ortho**<br>*Ortho* | ![ortho](images/icons/ortho.png) | Static Only | No description provided. |
 | **orthonormal_inverse**<br>*Orthonormal Inverse* | ![orthonormal_inverse](images/icons/orthonormal_inverse.png) | Static Only | No description provided. |
 | **ou_heat**<br>*Ou Heat* | ![ou_heat](images/icons/ou_heat.png) | Static Only | No description provided. |
 | **partition_z**<br>*Partition Z* | ![partition_z](images/icons/partition_z.png) | Static Only | No description provided. |
-| **paths_flow_density**<br>*Paths Flow Density* | ![paths_flow_density](images/icons/paths_flow_density.png) | Static Only | No description provided. |
+| **paths_flow_density**<br>*Paths Flow Density* | ![paths_flow_density](images/icons/paths_flow_density.png) | ![paths_flow_density gif](images/icons/paths_flow_density.gif) | No description provided. |
 | **permuted_lu_decomposition**<br>*Permuted Lu Decomposition* | ![permuted_lu_decomposition](images/icons/permuted_lu_decomposition.png) | Static Only | No description provided. |
 | **placeholder**<br>*Placeholder* | ![placeholder](images/icons/placeholder.png) | Static Only | No description provided. |
 | **power_method**<br>*Power Method* | ![power_method](images/icons/power_method.png) | Static Only | No description provided. |
 | **preservation**<br>*Preservation* | ![preservation](images/icons/preservation.png) | Static Only | No description provided. |
-| **probability_current**<br>*Probability Current* | ![probability_current](images/icons/probability_current.png) | Static Only | No description provided. |
+| **probability_current**<br>*Probability Current* | ![probability_current](images/icons/probability_current.png) | ![probability_current gif](images/icons/probability_current.gif) | No description provided. |
 | **proj**<br>*Proj* | ![proj](images/icons/proj.png) | Static Only | No description provided. |
 | **qr_decomposition**<br>*Qr Decomposition* | ![qr_decomposition](images/icons/qr_decomposition.png) | Static Only | No description provided. |
 | **quadratic_variation**<br>*Quadratic Variation* | ![quadratic_variation](images/icons/quadratic_variation.png) | Static Only | No description provided. |
@@ -175,7 +175,7 @@ These stylized icons are used to render key legends and specialized color coding
 | **reflection**<br>*Reflection* | ![reflection](images/icons/reflection.png) | Static Only | No description provided. |
 | **reparam**<br>*Reparam* | ![reparam](images/icons/reparam.png) | Static Only | No description provided. |
 | **reverse_fp**<br>*Reverse Fp* | ![reverse_fp](images/icons/reverse_fp.png) | Static Only | No description provided. |
-| **reverse_sde**<br>*Reverse Sde* | ![reverse_sde](images/icons/reverse_sde.png) | Static Only | No description provided. |
+| **reverse_sde**<br>*Reverse Sde* | ![reverse_sde](images/icons/reverse_sde.png) | ![reverse_sde gif](images/icons/reverse_sde.gif) | No description provided. |
 | **rope**<br>*Rope* | ![rope](images/icons/rope.png) | Static Only | No description provided. |
 | **rotation_circle**<br>*Rotation Circle* | ![rotation_circle](images/icons/rotation_circle.png) | Static Only | No description provided. |
 | **saddle_point**<br>*Saddle Point* | ![saddle_point](images/icons/saddle_point.png) | Static Only | No description provided. |
@@ -184,7 +184,7 @@ These stylized icons are used to render key legends and specialized color coding
 | **schur_gp**<br>*Schur Gp* | ![schur_gp](images/icons/schur_gp.png) | Static Only | No description provided. |
 | **sde_definition**<br>*Sde Definition* | ![sde_definition](images/icons/sde_definition.png) | Static Only | No description provided. |
 | **sde_optim_limit**<br>*Sde Optim Limit* | ![sde_optim_limit](images/icons/sde_optim_limit.png) | Static Only | No description provided. |
-| **sde_path**<br>*Sde Path* | ![sde_path](images/icons/sde_path.png) | Static Only | No description provided. |
+| **sde_path**<br>*Sde Path* | ![sde_path](images/icons/sde_path.png) | ![sde_path gif](images/icons/sde_path.gif) | No description provided. |
 | **shear**<br>*Shear* | ![shear](images/icons/shear.png) | ![shear gif](images/icons/shear.gif) | No description provided. |
 | **singular_value_decomposition**<br>*Singular Value Decomposition* | ![singular_value_decomposition](images/icons/singular_value_decomposition.png) | Static Only | No description provided. |
 | **skeleton**<br>*Skeleton* | ![skeleton](images/icons/skeleton.png) | Static Only | No description provided. |
