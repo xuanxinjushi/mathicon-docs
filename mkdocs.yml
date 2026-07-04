@@ -31,6 +31,8 @@ theme:
 
 markdown_extensions:
   - admonition
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight
@@ -40,6 +42,10 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
   - Home: index.md
@@ -54,5 +60,8 @@ nav:
       - Figure utilities: figure-utilities.md
       - Mindmaps: mindmaps.md
       - Mindmap JSON format: mindmap-json-format.md
+      - Posters: posters.md
+      - Icon registry: icon-registry.md
       - Icons reference: icons-reference.md
+      - CLI tools: cli-tools.md
   - System requirements: system-requirements.md

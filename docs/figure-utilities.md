@@ -1,6 +1,6 @@
 # Figure utilities
 
-Figure helpers live in `figure_utils.py`.
+Figure helpers live in `mathicon.common.figure_utils` (re-exported at package top level).
 
 ## Configure text rendering
 
@@ -75,3 +75,11 @@ save_figure(
 Saves as `<script_name>.png` beside the calling script.
 
 This is the default pattern used in chapter figure pipelines.
+
+## `save_mindmap_thumbnail`
+
+```python
+save_mindmap_thumbnail(caller_file, *, dpi=150, max_size_px=400)
+```
+
+Writes a compact PNG thumbnail for a rendered mindmap, useful for previews and index pages.

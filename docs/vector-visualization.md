@@ -1,6 +1,6 @@
 # Vector visualization
 
-Vector helpers live in `vector_vis.py`.
+Vector helpers live in `mathicon.common.vector_vis` (re-exported at package top level).
 
 ## Functions
 

@@ -15,9 +15,11 @@ from mathicon import (
     draw_affine_grid,
     draw_vec,
     finalize,
+    get_registered_icons,
     point_x_color,
     render_mindmap,
 )
+from mathicon.preview_icons import discover_icon_drawers, render_icon_preview
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -101,12 +103,45 @@ def gen_mindmap_image():
         json_path = os.path.join(tmp, "mindmap.json")
         shutil.copyfile(MINDMAP_SAMPLE_JSON, json_path)
 
-        render_mindmap(script_path)
+        custom_icons = {
+            spec.id: spec.draw_func for spec in get_registered_icons().values()
+        }
+        render_mindmap(script_path, custom_icons=custom_icons)
 
         generated = os.path.join(tmp, "mindmap_example.png")
         target = os.path.join(OUT_DIR, "mindmap-sample.png")
         shutil.copyfile(generated, target)
         trim_uniform_border(target, padding=1)
+
+
+def gen_nn_images():
+    """High-resolution neural-network icon showcases (requires torch + vendored visualtorch)."""
+    from pathlib import Path
+
+    drawers = discover_icon_drawers()
+    showcase = {
+        "nn_mlp": "nn-mlp.png",
+    }
+    for icon_id, filename in showcase.items():
+        if icon_id not in drawers:
+            print(f"Skip NN showcase: {icon_id} not in registry")
+            continue
+        out = Path(OUT_DIR)
+        render_icon_preview(
+            icon_id,
+            drawers[icon_id],
+            out,
+            file_format="png",
+            dpi=200,
+            figure_size=(6.0, 6.0),
+            size_scale=2.5,
+            autofit=True,
+        )
+        rendered = out / f"{icon_id}.png"
+        target = out / filename
+        if rendered != target:
+            shutil.move(str(rendered), str(target))
+        print(f"Wrote {target}")
 
 
 def main():
@@ -116,6 +151,7 @@ def main():
     gen_matrix_image()
     gen_vector_image()
     gen_mindmap_image()
+    gen_nn_images()
     print(f"Generated docs images in: {OUT_DIR}")
 
 

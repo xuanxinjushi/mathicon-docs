@@ -1,6 +1,6 @@
 # Matrix visualization
 
-Matrix utilities live in `matrix_vis.py` and are exported at package top level.
+Matrix utilities live in `mathicon.common.matrix_vis` (re-exported at package top level).
 
 ## Matrix class
 

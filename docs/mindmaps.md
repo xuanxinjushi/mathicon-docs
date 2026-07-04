@@ -20,11 +20,13 @@ The renderer reads `mindmap.json` from the same directory as `caller_file`.
 ## Minimal usage
 
 ```python
-from mathicon import render_mindmap
+from mathicon import get_registered_icons, render_mindmap
 
-if __name__ == "__main__":
-    render_mindmap(__file__)
+registry_icons = {spec.id: spec.draw_func for spec in get_registered_icons().values()}
+render_mindmap(__file__, custom_icons=registry_icons)
 ```
+
+Or pass only the overrides you need; built-in resolution checks `custom_icons`, caller globals, then `icon_utils.draw_{id}_icon`.
 
 Rendered example:
 
@@ -67,6 +69,6 @@ Renderer lookup order for icon `name`:
 1. `custom_icons["name"]`
 2. `custom_icons["draw_name_icon"]`
 3. local function `draw_name_icon` in caller script
-4. built-in `mathicon.icon_utils.draw_name_icon`
+4. built-in registry icon (exported as `draw_name_icon` from `mathicon`)
 
-That allows chapter-specific icons without forking the library.
+The authoritative list of built-in icon ids is in the [Icons reference](icons-reference.md) gallery, or via `get_registered_icons()` / `mathicon-preview-icons --list`. See [Icon registry](icon-registry.md) for registration and categories.

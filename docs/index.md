@@ -10,8 +10,10 @@ It is designed for long-form projects (books, lecture notes, technical reports) 
 - Matrix drawing primitives with row/column/diagonal highlighting
 - Vector helpers for arrows and affine grids
 - Figure output helpers aligned with chapter-script workflows
-- JSON-driven mindmap rendering with built-in and local custom icons
-- A large icon set for linear algebra, optimization, probability, and diffusion topics
+- JSON-driven mindmap and poster rendering with built-in and local custom icons
+- Central icon registry (~180 icons) for linear algebra, optimization, probability, stochastics, and legend matrix types
+- CLI tools: `mathicon-preview-icons`, `mathicon-icon-gui`
+- Multi-format icon export (PNG, SVG, PDF, WebP, GIF)
 
 ## Quick install
 
@@ -39,6 +41,10 @@ python -c "from mathicon import plane_color; print(plane_color)"
 
 ![Mindmap example](images/mindmap-sample.png)
 
+### Neural network MLP icon
+
+![Neural network MLP icon](images/nn-mlp.png)
+
 ## Documentation map
 
 | Section | Contents |
@@ -52,5 +58,8 @@ python -c "from mathicon import plane_color; print(plane_color)"
 | [Vector visualization](vector-visualization.md) | Grid and arrow drawing helpers |
 | [Figure utilities](figure-utilities.md) | Save and styling helpers |
 | [Mindmaps](mindmaps.md) | `mindmap.json` schema and rendering |
-| [Icons reference](icons-reference.md) | Built-in icon names for mindmaps |
+| [Posters](posters.md) | `poster.json` educational poster layout |
+| [Icon registry](icon-registry.md) | Central registry, categories, custom icons |
+| [Icons reference](icons-reference.md) | Built-in icon gallery for mindmaps |
+| [CLI tools](cli-tools.md) | `mathicon-preview-icons`, `mathicon-icon-gui` |
 | [System requirements](system-requirements.md) | Platform, Python, and dependencies |
