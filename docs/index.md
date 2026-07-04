@@ -1,10 +1,10 @@
-# Math4AI
+# Mathicon
 
-**Math4AI** is a Python toolkit for creating publication-ready mathematics and machine learning figures with a consistent visual language.
+**Mathicon** is a Python toolkit for creating publication-ready mathematics and machine learning figures with a consistent visual language.
 
 It is designed for long-form projects (books, lecture notes, technical reports) where figure style consistency matters across dozens or hundreds of scripts.
 
-## What Math4AI provides
+## What Mathicon provides
 
 - Shared color tokens for geometric and algebraic diagrams
 - Matrix drawing primitives with row/column/diagonal highlighting
@@ -16,13 +16,13 @@ It is designed for long-form projects (books, lecture notes, technical reports) 
 ## Quick install
 
 ```bash
-pip install math4ai
+pip install mathicon
 ```
 
 Sanity check:
 
 ```bash
-python -c "from math4ai import plane_color; print(plane_color)"
+python -c "from mathicon import plane_color; print(plane_color)"
 ```
 
 ## Visual output examples
@@ -43,7 +43,7 @@ python -c "from math4ai import plane_color; print(plane_color)"
 
 | Section | Contents |
 |---|---|
-| [What is Math4AI?](what-is-math4ai.md) | Scope, goals, and design principles |
+| [What is Mathicon?](what-is-mathicon.md) | Scope, goals, and design principles |
 | [Installation](installation.md) | PyPI and editable install |
 | [Quick start](quickstart.md) | Minimal working examples |
 | [Python API overview](python-api.md) | Public API categories |

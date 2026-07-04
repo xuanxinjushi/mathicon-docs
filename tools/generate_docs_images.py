@@ -7,7 +7,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from PIL import Image, ImageChops
 
-from math4ai import (
+from mathicon import (
     Matrix,
     arrow,
     configure_math_fonts,

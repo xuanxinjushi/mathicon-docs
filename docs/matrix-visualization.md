@@ -5,7 +5,7 @@ Matrix utilities live in `matrix_vis.py` and are exported at package top level.
 ## Matrix class
 
 ```python
-from math4ai import Matrix
+from mathicon import Matrix
 ```
 
 Constructor:
@@ -65,7 +65,7 @@ Matrix(
 
 ```python
 import matplotlib.pyplot as plt
-from math4ai import Matrix, draw_dashed_row, draw_dashed_col, finalize
+from mathicon import Matrix, draw_dashed_row, draw_dashed_col, finalize
 
 fig, ax = plt.subplots(figsize=(7, 4))
 m = Matrix(4, 6, cell_size=0.8, x_offset=0.2, y_offset=0.2)

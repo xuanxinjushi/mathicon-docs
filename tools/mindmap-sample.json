@@ -12,7 +12,7 @@
   "nodes": [
     {
       "id": "root",
-      "label": "Math4AI Plot",
+      "label": "Mathicon Plot",
       "pos": [1.6, 5.2],
       "color": "#1d4ed8",
       "is_branch": true,

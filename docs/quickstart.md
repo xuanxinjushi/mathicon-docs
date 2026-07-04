@@ -6,7 +6,7 @@ This page shows practical first steps with the public API.
 
 ```python
 import matplotlib.pyplot as plt
-from math4ai import point_x_color, save_figure_to_script_dir
+from mathicon import point_x_color, save_figure_to_script_dir
 
 fig, ax = plt.subplots()
 ax.scatter([1, 2, 3], [1, 4, 9], color=point_x_color)
@@ -21,7 +21,7 @@ Sample output:
 
 ```python
 import matplotlib.pyplot as plt
-from math4ai import draw_vec, arrow
+from mathicon import draw_vec, arrow
 
 fig, ax = plt.subplots(figsize=(5, 5))
 ax.set_xlim(-1, 4)
@@ -42,7 +42,7 @@ Sample output:
 
 ```python
 import matplotlib.pyplot as plt
-from math4ai import Matrix, finalize
+from mathicon import Matrix, finalize
 
 fig, ax = plt.subplots(figsize=(6, 4))
 
@@ -63,7 +63,7 @@ Sample output:
 Create `mindmap.json` beside your script, then:
 
 ```python
-from math4ai import render_mindmap
+from mathicon import render_mindmap
 
 if __name__ == "__main__":
     render_mindmap(__file__)

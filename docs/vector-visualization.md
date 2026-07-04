@@ -32,7 +32,7 @@ Draws an arrow from point `p` to point `q`.
 
 ```python
 import matplotlib.pyplot as plt
-from math4ai import draw_affine_grid, draw_vec, arrow
+from mathicon import draw_affine_grid, draw_vec, arrow
 
 fig, ax = plt.subplots(figsize=(6, 6))
 ax.set_xlim(-4, 4)

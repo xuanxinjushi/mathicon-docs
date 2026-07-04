@@ -3,13 +3,13 @@
 Main package import:
 
 ```python
-import math4ai
+import mathicon
 ```
 
 Most users import specific symbols:
 
 ```python
-from math4ai import Matrix, draw_vec, save_figure, render_mindmap
+from mathicon import Matrix, draw_vec, save_figure, render_mindmap
 ```
 
 ## API groups

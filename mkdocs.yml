@@ -1,6 +1,6 @@
-site_name: Math4AI
-site_description: Math4AI - publication-ready plotting utilities for mathematics and machine learning
-site_url: https://math4ai-plot.readthedocs.io/
+site_name: Mathicon
+site_description: Mathicon - publication-ready plotting utilities for mathematics and machine learning
+site_url: https://mathicon.readthedocs.io/
 
 docs_dir: docs
 strict: false
@@ -43,7 +43,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - What is Math4AI?: what-is-math4ai.md
+  - What is Mathicon?: what-is-mathicon.md
   - Installation: installation.md
   - Quick start: quickstart.md
   - API reference:

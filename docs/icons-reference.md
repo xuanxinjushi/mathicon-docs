@@ -1,6 +1,6 @@
 # Icons reference
 
-Math4AI includes built-in icon draw functions used by mindmaps.
+Mathicon includes built-in icon draw functions used by mindmaps.
 
 Use icon key `"name"` in `mindmap.json` to resolve `draw_name_icon`.
 

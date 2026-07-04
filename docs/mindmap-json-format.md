@@ -110,7 +110,7 @@ For node icon `"name"`, renderer resolves draw function in this order:
 1. `custom_icons["name"]`
 2. `custom_icons["draw_name_icon"]`
 3. local `draw_name_icon` function in caller script
-4. built-in `math4ai.icon_utils.draw_name_icon`
+4. built-in `mathicon.icon_utils.draw_name_icon`
 
 If icon resolution fails, a warning is printed.
 

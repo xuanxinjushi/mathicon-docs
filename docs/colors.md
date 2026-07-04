@@ -1,11 +1,11 @@
 # Colors
 
-Math4AI exposes shared color constants for consistent styling across scripts.
+Mathicon exposes shared color constants for consistent styling across scripts.
 
 ## Constants
 
 ```python
-from math4ai import (
+from mathicon import (
     plane_color,
     point_x_color,
     foot_x_bar_color,
@@ -30,7 +30,7 @@ Current defaults:
 
 ```python
 import matplotlib.pyplot as plt
-from math4ai import point_x_color, distance_line_color
+from mathicon import point_x_color, distance_line_color
 
 fig, ax = plt.subplots()
 ax.scatter([0, 1], [0, 1], color=point_x_color)

@@ -3,7 +3,7 @@
 Mindmap rendering is provided by:
 
 ```python
-from math4ai import render_mindmap
+from mathicon import render_mindmap
 ```
 
 ## Entry point
@@ -20,7 +20,7 @@ The renderer reads `mindmap.json` from the same directory as `caller_file`.
 ## Minimal usage
 
 ```python
-from math4ai import render_mindmap
+from mathicon import render_mindmap
 
 if __name__ == "__main__":
     render_mindmap(__file__)
@@ -53,7 +53,7 @@ Minimal example:
     "font_size": 13
   },
   "nodes": [
-    {"id": "root", "label": "Math4AI", "pos": [7.0, 9.0], "color": "#2563eb", "is_branch": true},
+    {"id": "root", "label": "Mathicon", "pos": [7.0, 9.0], "color": "#2563eb", "is_branch": true},
     {"id": "la", "parent": "root", "label": "Linear Algebra", "pos": [4.0, 6.5], "icon": "svd"}
   ],
   "extra_links": []
@@ -67,6 +67,6 @@ Renderer lookup order for icon `name`:
 1. `custom_icons["name"]`
 2. `custom_icons["draw_name_icon"]`
 3. local function `draw_name_icon` in caller script
-4. built-in `math4ai.icon_utils.draw_name_icon`
+4. built-in `mathicon.icon_utils.draw_name_icon`
 
 That allows chapter-specific icons without forking the library.
