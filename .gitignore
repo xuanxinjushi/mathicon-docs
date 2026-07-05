@@ -195,5 +195,7 @@ book.pdf
 
 cover/**/*.pdf
 play/**/*.pdf
-site/*
+# Generated icon gallery assets (run: python tools/generate_gallery.py --force)
+docs/images/icons/*.png
+docs/images/icons/*.gif
 
