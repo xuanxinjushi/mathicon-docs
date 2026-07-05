@@ -16,6 +16,7 @@ from mathicon.preview_icons import (
     animate_icon_preview,
     supported_animated_icons,
 )
+from mathicon.manim_icons import MANIM_ICON_SCENES, render_manim_icon_preview
 from mathicon import get_icon_spec
 
 
@@ -76,7 +77,7 @@ CATEGORY_SECTIONS = [
     (
         "neural_network",
         "Neural Network Icons",
-        "Architecture diagrams rendered with [visualtorch](https://github.com/willyfh/visualtorch). Requires `pip install mathicon[nn]` (torch + aggdraw).",
+        "Architecture diagrams; `nn_mlp` uses a Manim forward-pass flow animation (GIF + MP4).",
     ),
 ]
 
@@ -128,7 +129,18 @@ def _md_table_cell(text: str) -> str:
 def _gif_cell(name: str, animated_icons: set, supported_icons: set) -> str:
     if name in animated_icons and name in supported_icons:
         return f"![{name} gif](images/icons/{name}.gif)"
-    return "Static Only"
+    return "—"
+
+
+def _mp4_cell(name: str, manim_icons: set) -> str:
+    if name in manim_icons:
+        # MkDocs rewrites markdown image paths but not raw HTML; use a path that
+        # resolves from docs/icons-reference.md (../images/...).
+        return (
+            f'<video src="../images/icons/{name}.mp4" width="200" height="200" '
+            f'autoplay loop muted playsinline></video>'
+        )
+    return "—"
 
 
 def build_gallery(gif_icons=None, force=False, icon_filter=None):
@@ -148,6 +160,11 @@ def build_gallery(gif_icons=None, force=False, icon_filter=None):
     metadata_gif_icons = {
         str(icon).strip() for icon in metadata_payload.get("gif_icons", []) if str(icon).strip()
     }
+    metadata_manim_icons = {
+        str(icon).strip() for icon in metadata_payload.get("manim_icons", []) if str(icon).strip()
+    }
+    if not metadata_manim_icons:
+        metadata_manim_icons = set(MANIM_ICON_SCENES)
 
     all_drawers = discover_icon_drawers()
     if icon_filter:
@@ -177,6 +194,8 @@ def build_gallery(gif_icons=None, force=False, icon_filter=None):
     gif_rendered = 0
     gif_skipped = 0
     gif_unsupported = 0
+    manim_rendered = 0
+    manim_skipped = 0
 
     idx = 0
     for name, draw_func in sorted(render_drawers.items()):
@@ -194,6 +213,7 @@ def build_gallery(gif_icons=None, force=False, icon_filter=None):
         else:
             png_skipped += 1
 
+        # matplotlib GIF (unchanged): the existing loopable animation.
         if name in animated_icons and name in supported_icons:
             gif_path = images_dir / f"{name}.gif"
             if force or not gif_path.exists():
@@ -204,8 +224,20 @@ def build_gallery(gif_icons=None, force=False, icon_filter=None):
                 gif_rendered += 1
             else:
                 gif_skipped += 1
-        elif name in animated_icons:
+        elif name in animated_icons and name not in metadata_manim_icons:
             gif_unsupported += 1
+
+        # Manim MP4 (additive): an extra, richer video option. Does NOT replace
+        # the matplotlib GIF above; only writes the .mp4 asset.
+        if name in metadata_manim_icons:
+            mp4_path = images_dir / f"{name}.mp4"
+            if force or not mp4_path.exists():
+                render_manim_icon_preview(
+                    name, images_dir, force=force, write_mp4=True, write_gif=False,
+                )
+                manim_rendered += 1
+            else:
+                manim_skipped += 1
 
         plt.close("all")
 
@@ -218,7 +250,11 @@ def build_gallery(gif_icons=None, force=False, icon_filter=None):
         desc = _desc_for_icon(name, meta, metadata_payload)
         img_str = f"![{name}](images/icons/{name}.png)"
         gif_str = _gif_cell(name, animated_icons, supported_icons)
-        row = f"| **{name}**<br>*{title}* | {img_str} | {gif_str} | {_md_table_cell(desc)} |\n"
+        mp4_str = _mp4_cell(name, metadata_manim_icons)
+        row = (
+            f"| **{name}**<br>*{title}* | {img_str} | {gif_str} | {mp4_str} "
+            f"| {_md_table_cell(desc)} |\n"
+        )
 
         spec = get_icon_spec(name)
         category = spec.category if spec else ""
@@ -234,8 +270,8 @@ def build_gallery(gif_icons=None, force=False, icon_filter=None):
     ]
 
     table_header = (
-        "\n| Key / Title | Static Image | Loopable GIF | Concept & Role |\n"
-        "| :--- | :---: | :---: | :--- |\n"
+        "\n| Key / Title | Static Image | Loopable GIF | MP4 | Concept & Role |\n"
+        "| :--- | :---: | :---: | :---: | :--- |\n"
     )
 
     for cat_id, cat_title, cat_blurb in CATEGORY_SECTIONS:
@@ -259,7 +295,8 @@ def build_gallery(gif_icons=None, force=False, icon_filter=None):
         "Render summary: "
         f"PNG rendered={png_rendered}, PNG skipped={png_skipped}, "
         f"GIF rendered={gif_rendered}, GIF skipped={gif_skipped}, "
-        f"GIF unsupported={gif_unsupported}"
+        f"GIF unsupported={gif_unsupported}, "
+        f"Manim rendered={manim_rendered}, Manim skipped={manim_skipped}"
     )
     print(f"Successfully generated icons reference page at: {reference_path}")
 

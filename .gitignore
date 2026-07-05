@@ -198,4 +198,5 @@ play/**/*.pdf
 # Generated icon gallery assets (run: python tools/generate_gallery.py --force)
 docs/images/icons/*.png
 docs/images/icons/*.gif
+docs/images/icons/*.mp4
 
