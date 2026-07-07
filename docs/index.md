@@ -12,7 +12,7 @@ It is designed for long-form projects (books, lecture notes, technical reports) 
 - Figure output helpers aligned with chapter-script workflows
 - JSON-driven mindmap and poster rendering with built-in and local custom icons
 - Central icon registry (~180 icons) for linear algebra, optimization, probability, stochastics, and legend matrix types
-- CLI tools: `mathicon-preview-icons`, `mathicon-icon-gui`
+- CLI tools: `mathicon-preview-icons`, `mathicon-gui`
 - Multi-format icon export (PNG, SVG, PDF, WebP, GIF)
 
 ## Quick install
@@ -61,5 +61,5 @@ python -c "from mathicon import plane_color; print(plane_color)"
 | [Posters](posters.md) | `poster.json` educational poster layout |
 | [Icon registry](icon-registry.md) | Central registry, categories, custom icons |
 | [Icons reference](icons-reference.md) | Built-in icon gallery for mindmaps |
-| [CLI tools](cli-tools.md) | `mathicon-preview-icons`, `mathicon-icon-gui` |
+| [CLI tools](cli-tools.md) | `mathicon-preview-icons`, `mathicon-gui` |
 | [System requirements](system-requirements.md) | Platform, Python, and dependencies |

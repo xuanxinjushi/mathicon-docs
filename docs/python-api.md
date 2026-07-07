@@ -109,7 +109,7 @@ Installed console scripts:
 ```bash
 mathicon-preview-icons --list
 mathicon-preview-icons --icons qr,svd,rotation --format png,svg,gif
-mathicon-icon-gui
+mathicon-gui
 ```
 
 `mathicon-preview-icons` discovers icons from the registry and can export PNG, SVG, PDF, WebP, JPG, and loopable GIF/WebP for animated icons.

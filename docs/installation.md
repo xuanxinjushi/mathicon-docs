@@ -38,7 +38,7 @@ After install, two scripts are available:
 
 ```bash
 mathicon-preview-icons --list
-mathicon-icon-gui
+mathicon-gui
 ```
 
 See [CLI tools](cli-tools.md).

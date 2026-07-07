@@ -32,7 +32,7 @@ Common options:
 
 PNG output uses transparent trimming when applicable (`mathicon.common.img_utils`).
 
-## `mathicon-icon-gui`
+## `mathicon-gui`
 
 Interactive Tkinter browser for exploring icons:
 
@@ -43,7 +43,7 @@ Interactive Tkinter browser for exploring icons:
 - Book chapter excerpts for icons mapped in `icon_metadata.json`
 
 ```bash
-mathicon-icon-gui
+mathicon-gui
 ```
 
 ## Regenerating the docs gallery
