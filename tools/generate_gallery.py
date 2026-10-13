@@ -75,6 +75,16 @@ CATEGORY_SECTIONS = [
         "SDEs, diffusion, sampling, and stochastic-process sample paths.",
     ),
     (
+        "machine_learning",
+        "Machine Learning",
+        "Classic supervised and unsupervised learning models.",
+    ),
+    (
+        "distributed_systems",
+        "Distributed Systems",
+        "Parallel training, LLM serving, accelerators, and cluster infrastructure.",
+    ),
+    (
         "neural_network",
         "Neural Network Icons",
         "Architecture diagrams; `nn_mlp` uses a Manim forward-pass flow animation (GIF + MP4).",

@@ -57,7 +57,7 @@ Vectors, linear maps, subspaces, and decompositions used throughout the book.
 | **rank1**<br>*Rank-One Matrix* | ![rank1](images/icons/rank1.png) | — | — | Represents a matrix formed as one outer product, mapping inputs through a single direction of variation. |
 | **rank_revealing_qr**<br>*Rank-Revealing QR* | ![rank_revealing_qr](images/icons/rank_revealing_qr.png) | — | — | Shows QR with column selection or pivoting to expose numerical rank and important columns. |
 | **rayleigh**<br>*Rayleigh Quotient* | ![rayleigh](images/icons/rayleigh.png) | — | — | Shows how a vector probes eigenvalue-like curvature of a symmetric matrix. |
-| **reflection**<br>*Reflection* | ![reflection](images/icons/reflection.png) | ![reflection gif](images/icons/reflection.gif) | — | Black reference square fixed; red dashed copy flips across the x-axis from the identity to the mirrored position (y scale $1 \to -1$), matching Householder reflection geometry. |
+| **reflection**<br>*Reflection* | ![reflection](images/icons/reflection.png) | — | — | Black reference square fixed; red dashed copy flips across the x-axis from the identity to the mirrored position (y scale $1 \to -1$), matching Householder reflection geometry. |
 | **rope**<br>*Rotary Position Embedding (RoPE)* | ![rope](images/icons/rope.png) | ![rope gif](images/icons/rope.gif) | — | Token positions fixed; blue $q$ and purple $k$ rotate by $m\theta$ as position $m$ increases along the sequence. |
 | **rotation**<br>*Rotation* | ![rotation](images/icons/rotation.png) | ![rotation gif](images/icons/rotation.gif) | — | Shows a fixed black reference square and a red dashed copy rotating slowly about the bottom-left corner from 0° to 45°, matching the chapter rotation figure. |
 | **rotation_circle**<br>*Rotation on Unit Circle* | ![rotation_circle](images/icons/rotation_circle.png) | ![rotation_circle gif](images/icons/rotation_circle.gif) | — | Unit circle and axes fixed; purple vector $e^{i\theta}$ rotates from the real axis to $45^\circ$ while the angle arc grows. |
@@ -146,9 +146,11 @@ Distributions, information measures, and probabilistic building blocks.
 | Key / Title | Static Image | Loopable GIF | MP4 | Concept & Role |
 | :--- | :---: | :---: | :---: | :--- |
 | **bayes**<br>*Bayes' Rule* | ![bayes](images/icons/bayes.png) | — | — | Represents updating a prior belief into a posterior after observing evidence. |
+| **beta**<br>*Beta* | ![beta](images/icons/beta.png) | ![beta gif](images/icons/beta.gif) | — | Mindmap icon for Beta. Used to represent the beta concept in Math4AI diagrams. |
 | **beta_dirichlet_vmf**<br>*Beta, Dirichlet, and von Mises-Fisher* | ![beta_dirichlet_vmf](images/icons/beta_dirichlet_vmf.png) | — | — | Groups common distribution families for simplex, probability, and directional data: Beta, Dirichlet, and vMF. |
 | **covariance**<br>*Covariance* | ![covariance](images/icons/covariance.png) | — | — | Represents how variables vary together and how probability mass stretches along correlated directions. |
 | **cross_entropy**<br>*Cross Entropy* | ![cross_entropy](images/icons/cross_entropy.png) | — | — | Represents the loss comparing a target distribution against predicted probabilities. |
+| **dirichlet**<br>*Dirichlet* | ![dirichlet](images/icons/dirichlet.png) | ![dirichlet gif](images/icons/dirichlet.gif) | — | Mindmap icon for Dirichlet. Used to represent the dirichlet concept in Math4AI diagrams. |
 | **elbo**<br>*ELBO* | ![elbo](images/icons/elbo.png) | — | — | Represents the evidence lower bound used in variational inference and latent-variable models. |
 | **entropy**<br>*Entropy* | ![entropy](images/icons/entropy.png) | — | — | Represents uncertainty, spread, or information content in a probability distribution. |
 | **expectation**<br>*Expectation* | ![expectation](images/icons/expectation.png) | — | — | Represents averaging a random variable under a probability distribution, the central operation behind moments and risk. |
@@ -160,6 +162,7 @@ Distributions, information measures, and probabilistic building blocks.
 | **joint_marginal**<br>*Joint and Marginal Distributions* | ![joint_marginal](images/icons/joint_marginal.png) | — | — | Shows a joint distribution projected or summed into marginal distributions along each variable axis. |
 | **kl**<br>*KL Divergence* | ![kl](images/icons/kl.png) | ![kl gif](images/icons/kl.gif) | — | Blue $P$ and green $Q$ fixed; peach gap between the curves grows, visualizing $D_{\mathrm{KL}}(P \parallel Q)$. |
 | **mutual_info**<br>*Mutual Information* | ![mutual_info](images/icons/mutual_info.png) | — | — | Represents shared information between random variables. |
+| **von_mises_fisher**<br>*Von Mises Fisher* | ![von_mises_fisher](images/icons/von_mises_fisher.png) | ![von_mises_fisher gif](images/icons/von_mises_fisher.gif) | — | Mindmap icon for Von Mises Fisher. Used to represent the von mises fisher concept in Math4AI diagrams. |
 
 ## Stochastics
 
@@ -172,6 +175,7 @@ SDEs, diffusion, sampling, and stochastic-process sample paths.
 | **cir_process**<br>*CIR Process* | ![cir_process](images/icons/cir_process.png) | ![cir_process gif](images/icons/cir_process.gif) | — | Five CIR paths stay positive above the zero floor and revert toward dashed $\mu$; Gaussian marginal at $t$ on the right (aleatory-style). |
 | **ctmc**<br>*Continuous-Time Markov Chain* | ![ctmc](images/icons/ctmc.png) | ![ctmc gif](images/icons/ctmc.gif) | — | States $S_1, S_2$ and rate $\lambda\,dt$ fixed; a token travels the forward arc then the reverse arc, illustrating CTMC jumps in continuous time. |
 | **ddim**<br>*DDIM Sampler* | ![ddim](images/icons/ddim.png) | ![ddim gif](images/icons/ddim.gif) | — | Three deterministic DDIM denoising paths grow from noise to data; a faint dashed SDE path stays for contrast with non-Markovian sampling. |
+| **ddpm**<br>*Ddpm* | ![ddpm](images/icons/ddpm.png) | ![ddpm gif](images/icons/ddpm.gif) | — | Mindmap icon for Ddpm. Used to represent the ddpm concept in Math4AI diagrams. |
 | **denoising**<br>*Denoising Score Matching* | ![denoising](images/icons/denoising.png) | ![denoising gif](images/icons/denoising.gif) | — | Shows a noisy sample $\tilde{\mathbf{x}}$ converging toward clean data $\mathbf{x}_0$ along the learned score direction $s_\theta$. |
 | **density_evolution**<br>*Density Evolution* | ![density_evolution](images/icons/density_evolution.png) | ![density_evolution gif](images/icons/density_evolution.gif) | — | Shows a probability density $p(x,t)$ spreading and flattening under Fokker–Planck diffusion from $t_0$ to $t_1$. |
 | **detailed_balance**<br>*Detailed Balance* | ![detailed_balance](images/icons/detailed_balance.png) | ![detailed_balance gif](images/icons/detailed_balance.gif) | — | Stationary weights $p^*$ fixed; paired forward and reverse flux arrows grow symmetrically, illustrating detailed balance at equilibrium. |
@@ -186,6 +190,7 @@ SDEs, diffusion, sampling, and stochastic-process sample paths.
 | **fisher_divergence**<br>*Fisher Divergence* | ![fisher_divergence](images/icons/fisher_divergence.png) | ![fisher_divergence gif](images/icons/fisher_divergence.gif) | — | True score field $s$ (blue) fixed; red $s_\theta$ arrows shrink inward and the purple gap closes as the Fisher objective is minimized. |
 | **flow_attractors**<br>*Flow Attractors* | ![flow_attractors](images/icons/flow_attractors.png) | ![flow_attractors gif](images/icons/flow_attractors.gif) | — | Shows score-induced flows converging toward density modes (attractors) of a multimodal distribution. |
 | **fokker_planck**<br>*Fokker-Planck Equation* | ![fokker_planck](images/icons/fokker_planck.png) | ![fokker_planck gif](images/icons/fokker_planck.gif) | — | Shows $p(x,t)$ evolving under Fokker--Planck dynamics: gray dashed $p_0$ fixed while blue density drifts right and spreads (diffusion); red arrow tracks drift. |
+| **forecast**<br>*Forecasting* | ![forecast](images/icons/forecast.png) | ![forecast gif](images/icons/forecast.gif) | — | Historical green series meets a vertical divider; blue uncertainty bands widen into the future as the realized forecast path animates. |
 | **forward_diffusion**<br>*Forward Diffusion* | ![forward_diffusion](images/icons/forward_diffusion.png) | ![forward_diffusion gif](images/icons/forward_diffusion.gif) | — | Forward diffusion corrupts a structured data density (bimodal $p_{\mathrm{data}}$) into a wide Gaussian noise distribution as $t \uparrow$; animation shows peaks merging and flattening. |
 | **gbm_process**<br>*Geometric Brownian Motion* | ![gbm_process](images/icons/gbm_process.png) | ![gbm_process gif](images/icons/gbm_process.gif) | — | Several GBM paths with dashed $E[S_t]$; log-normal marginal at $T$ on the right shows spread from multiplicative noise. |
 | **generative_compare**<br>*Generative Model Comparison* | ![generative_compare](images/icons/generative_compare.png) | ![generative_compare gif](images/icons/generative_compare.gif) | — | GAN, normalizing-flow, and diffusion columns highlight in turn, contrasting adversarial, invertible, and score-based generation. |
@@ -225,6 +230,87 @@ SDEs, diffusion, sampling, and stochastic-process sample paths.
 | **var_family**<br>*Variational Family* | ![var_family](images/icons/var_family.png) | ![var_family gif](images/icons/var_family.gif) | — | Candidate $q_\phi(z)$ curves fixed; highlight cycles across family members until one approximation becomes solid with filled support. |
 | **vasicek_process**<br>*Vasicek Process* | ![vasicek_process](images/icons/vasicek_process.png) | ![vasicek_process gif](images/icons/vasicek_process.gif) | — | Vasicek short-rate path oscillates around dashed long-run mean $\mu$ as red $r_t$ mean-reverts in time. |
 | **zoh**<br>*Zero-Order Hold* | ![zoh](images/icons/zoh.png) | ![zoh gif](images/icons/zoh.gif) | — | Gray continuous signal dashed; green zero-order-hold stair steps build left to right, holding each sample until the next grid time. |
+
+## Machine Learning
+
+Classic supervised and unsupervised learning models.
+
+| Key / Title | Static Image | Loopable GIF | MP4 | Concept & Role |
+| :--- | :---: | :---: | :---: | :--- |
+| **decision_tree**<br>*Decision Tree* | ![decision_tree](images/icons/decision_tree.png) | ![decision_tree gif](images/icons/decision_tree.gif) | — | Binary tree grows level by level from root to leaves, illustrating recursive feature splits. |
+| **gradient_boosting_tree**<br>*Gradient Boosting Tree* | ![gradient_boosting_tree](images/icons/gradient_boosting_tree.png) | ![gradient_boosting_tree gif](images/icons/gradient_boosting_tree.gif) | — | Residual bars appear first, then each weak tree grows on a stacked card while the remaining error shrinks. |
+| **kmeans_clustering**<br>*K-Means Clustering* | ![kmeans_clustering](images/icons/kmeans_clustering.png) | ![kmeans_clustering gif](images/icons/kmeans_clustering.gif) | — | Colored data points appear cluster by cluster, then centroids migrate from the center and dashed boundaries form. |
+| **knn**<br>*K-Nearest Neighbors* | ![knn](images/icons/knn.png) | ![knn gif](images/icons/knn.gif) | — | Eight unlabeled points appear, a query is placed, the neighborhood radius expands, then the three nearest turn orange and the other five turn purple. |
+| **linear_regression**<br>*Linear Regression* | ![linear_regression](images/icons/linear_regression.png) | ![linear_regression gif](images/icons/linear_regression.gif) | — | Scatter points appear sequentially, then a least-squares line grows across the plot. |
+| **logistic_regression**<br>*Logistic Regression* | ![logistic_regression](images/icons/logistic_regression.png) | ![logistic_regression gif](images/icons/logistic_regression.gif) | — | Binary labels at $y=0$ and $y=1$ appear, then a sigmoid curve traces the class probability $P(y{=}1\mid X)$. |
+| **naive_bayes**<br>*Naive Bayes* | ![naive_bayes](images/icons/naive_bayes.png) | ![naive_bayes gif](images/icons/naive_bayes.gif) | — | An email appears with word features, then an arrow points to a SPAM classification label. |
+| **random_forest**<br>*Random Forest* | ![random_forest](images/icons/random_forest.png) | ![random_forest gif](images/icons/random_forest.gif) | — | Three bootstrap trees appear in parallel, arrows aggregate their votes, then an average/majority-vote box forms. |
+| **svm**<br>*Support Vector Machine* | ![svm](images/icons/svm.png) | ![svm gif](images/icons/svm.gif) | — | Two-class points appear, the separating hyperplane draws, then dashed margin lines expand to the maximum gap. |
+
+## Distributed Systems
+
+Parallel training, LLM serving, accelerators, and cluster infrastructure.
+
+| Key / Title | Static Image | Loopable GIF | MP4 | Concept & Role |
+| :--- | :---: | :---: | :---: | :--- |
+| **ab_testing**<br>*Ab Testing* | ![ab_testing](images/icons/ab_testing.png) | — | — | Mindmap icon for Ab Testing. Used to represent the ab testing concept in Math4AI diagrams. |
+| **agent**<br>*Agent* | ![agent](images/icons/agent.png) | — | — | Mindmap icon for Agent. Used to represent the agent concept in Math4AI diagrams. |
+| **allreduce**<br>*Allreduce* | ![allreduce](images/icons/allreduce.png) | — | — | Mindmap icon for Allreduce. Used to represent the allreduce concept in Math4AI diagrams. |
+| **compute_power**<br>*Compute Power* | ![compute_power](images/icons/compute_power.png) | — | — | Mindmap icon for Compute Power. Used to represent the compute power concept in Math4AI diagrams. |
+| **cpu**<br>*Cpu* | ![cpu](images/icons/cpu.png) | — | — | Mindmap icon for Cpu. Used to represent the cpu concept in Math4AI diagrams. |
+| **data_parallel**<br>*Data Parallel* | ![data_parallel](images/icons/data_parallel.png) | — | — | Mindmap icon for Data Parallel. Used to represent the data parallel concept in Math4AI diagrams. |
+| **ddp**<br>*Ddp* | ![ddp](images/icons/ddp.png) | — | — | Mindmap icon for Ddp. Used to represent the ddp concept in Math4AI diagrams. |
+| **deepspeed**<br>*Deepspeed* | ![deepspeed](images/icons/deepspeed.png) | — | — | Mindmap icon for Deepspeed. Used to represent the deepspeed concept in Math4AI diagrams. |
+| **deployment**<br>*Deployment* | ![deployment](images/icons/deployment.png) | — | — | Mindmap icon for Deployment. Used to represent the deployment concept in Math4AI diagrams. |
+| **dp_ep**<br>*Dp Ep* | ![dp_ep](images/icons/dp_ep.png) | — | — | Mindmap icon for Dp Ep. Used to represent the dp ep concept in Math4AI diagrams. |
+| **expert_parallel**<br>*Expert Parallel* | ![expert_parallel](images/icons/expert_parallel.png) | — | — | Mindmap icon for Expert Parallel. Used to represent the expert parallel concept in Math4AI diagrams. |
+| **federated_learning**<br>*Federated Learning* | ![federated_learning](images/icons/federated_learning.png) | — | — | Mindmap icon for Federated Learning. Used to represent the federated learning concept in Math4AI diagrams. |
+| **fragmentation**<br>*Fragmentation* | ![fragmentation](images/icons/fragmentation.png) | — | — | Mindmap icon for Fragmentation. Used to represent the fragmentation concept in Math4AI diagrams. |
+| **fsdp**<br>*Fsdp* | ![fsdp](images/icons/fsdp.png) | — | — | Mindmap icon for Fsdp. Used to represent the fsdp concept in Math4AI diagrams. |
+| **gpu_mem**<br>*Gpu Mem* | ![gpu_mem](images/icons/gpu_mem.png) | — | — | Mindmap icon for Gpu Mem. Used to represent the gpu mem concept in Math4AI diagrams. |
+| **inference**<br>*Inference* | ![inference](images/icons/inference.png) | — | — | Mindmap icon for Inference. Used to represent the inference concept in Math4AI diagrams. |
+| **infiniband**<br>*Infiniband* | ![infiniband](images/icons/infiniband.png) | — | — | Mindmap icon for Infiniband. Used to represent the infiniband concept in Math4AI diagrams. |
+| **k8s**<br>*K8S* | ![k8s](images/icons/k8s.png) | — | — | Mindmap icon for K8S. Used to represent the k8s concept in Math4AI diagrams. |
+| **kserve**<br>*Kserve* | ![kserve](images/icons/kserve.png) | — | — | Mindmap icon for Kserve. Used to represent the kserve concept in Math4AI diagrams. |
+| **kv_cache**<br>*Kv Cache* | ![kv_cache](images/icons/kv_cache.png) | — | — | Mindmap icon for Kv Cache. Used to represent the kv cache concept in Math4AI diagrams. |
+| **lru**<br>*Lru* | ![lru](images/icons/lru.png) | — | — | Mindmap icon for Lru. Used to represent the lru concept in Math4AI diagrams. |
+| **megatron**<br>*Megatron* | ![megatron](images/icons/megatron.png) | — | — | Mindmap icon for Megatron. Used to represent the megatron concept in Math4AI diagrams. |
+| **mfu**<br>*Mfu* | ![mfu](images/icons/mfu.png) | — | — | Mindmap icon for Mfu. Used to represent the mfu concept in Math4AI diagrams. |
+| **moe**<br>*Moe* | ![moe](images/icons/moe.png) | — | — | Mindmap icon for Moe. Used to represent the moe concept in Math4AI diagrams. |
+| **multi_engine_routing**<br>*Multi Engine Routing* | ![multi_engine_routing](images/icons/multi_engine_routing.png) | — | — | Mindmap icon for Multi Engine Routing. Used to represent the multi engine routing concept in Math4AI diagrams. |
+| **multi_gpu**<br>*Multi Gpu* | ![multi_gpu](images/icons/multi_gpu.png) | — | — | Mindmap icon for Multi Gpu. Used to represent the multi gpu concept in Math4AI diagrams. |
+| **multi_model_routing**<br>*Multi Model Routing* | ![multi_model_routing](images/icons/multi_model_routing.png) | — | — | Mindmap icon for Multi Model Routing. Used to represent the multi model routing concept in Math4AI diagrams. |
+| **non_iid**<br>*Non Iid* | ![non_iid](images/icons/non_iid.png) | — | — | Mindmap icon for Non Iid. Used to represent the non iid concept in Math4AI diagrams. |
+| **npu**<br>*Npu* | ![npu](images/icons/npu.png) | — | — | Mindmap icon for Npu. Used to represent the npu concept in Math4AI diagrams. |
+| **observability**<br>*Observability* | ![observability](images/icons/observability.png) | — | — | Mindmap icon for Observability. Used to represent the observability concept in Math4AI diagrams. |
+| **op_fusion**<br>*Op Fusion* | ![op_fusion](images/icons/op_fusion.png) | — | — | Mindmap icon for Op Fusion. Used to represent the op fusion concept in Math4AI diagrams. |
+| **pd_disaggregation**<br>*Pd Disaggregation* | ![pd_disaggregation](images/icons/pd_disaggregation.png) | — | — | Mindmap icon for Pd Disaggregation. Used to represent the pd disaggregation concept in Math4AI diagrams. |
+| **pipeline_parallel**<br>*Pipeline Parallel* | ![pipeline_parallel](images/icons/pipeline_parallel.png) | — | — | Mindmap icon for Pipeline Parallel. Used to represent the pipeline parallel concept in Math4AI diagrams. |
+| **prefill**<br>*Prefill* | ![prefill](images/icons/prefill.png) | — | — | Mindmap icon for Prefill. Used to represent the prefill concept in Math4AI diagrams. |
+| **process_group**<br>*Process Group* | ![process_group](images/icons/process_group.png) | — | — | Mindmap icon for Process Group. Used to represent the process group concept in Math4AI diagrams. |
+| **profiling**<br>*Profiling* | ![profiling](images/icons/profiling.png) | — | — | Mindmap icon for Profiling. Used to represent the profiling concept in Math4AI diagrams. |
+| **radix_tree**<br>*Radix Tree* | ![radix_tree](images/icons/radix_tree.png) | — | — | Mindmap icon for Radix Tree. Used to represent the radix tree concept in Math4AI diagrams. |
+| **ring_attention**<br>*Ring Attention* | ![ring_attention](images/icons/ring_attention.png) | — | — | Mindmap icon for Ring Attention. Used to represent the ring attention concept in Math4AI diagrams. |
+| **roce**<br>*Roce* | ![roce](images/icons/roce.png) | — | — | Mindmap icon for Roce. Used to represent the roce concept in Math4AI diagrams. |
+| **routing**<br>*Routing* | ![routing](images/icons/routing.png) | — | — | Mindmap icon for Routing. Used to represent the routing concept in Math4AI diagrams. |
+| **serving**<br>*Serving* | ![serving](images/icons/serving.png) | — | — | Mindmap icon for Serving. Used to represent the serving concept in Math4AI diagrams. |
+| **sglang**<br>*Sglang* | ![sglang](images/icons/sglang.png) | — | — | Mindmap icon for Sglang. Used to represent the sglang concept in Math4AI diagrams. |
+| **simt**<br>*Simt* | ![simt](images/icons/simt.png) | — | — | Mindmap icon for Simt. Used to represent the simt concept in Math4AI diagrams. |
+| **single_gpu**<br>*Single Gpu* | ![single_gpu](images/icons/single_gpu.png) | — | — | Mindmap icon for Single Gpu. Used to represent the single gpu concept in Math4AI diagrams. |
+| **slurm**<br>*Slurm* | ![slurm](images/icons/slurm.png) | — | — | Mindmap icon for Slurm. Used to represent the slurm concept in Math4AI diagrams. |
+| **small_model**<br>*Small Model* | ![small_model](images/icons/small_model.png) | — | — | Mindmap icon for Small Model. Used to represent the small model concept in Math4AI diagrams. |
+| **speculative_decoding**<br>*Speculative Decoding* | ![speculative_decoding](images/icons/speculative_decoding.png) | — | — | Mindmap icon for Speculative Decoding. Used to represent the speculative decoding concept in Math4AI diagrams. |
+| **spmd**<br>*Spmd* | ![spmd](images/icons/spmd.png) | — | — | Mindmap icon for Spmd. Used to represent the spmd concept in Math4AI diagrams. |
+| **tokenizer**<br>*Tokenizer* | ![tokenizer](images/icons/tokenizer.png) | — | — | Mindmap icon for Tokenizer. Used to represent the tokenizer concept in Math4AI diagrams. |
+| **torch**<br>*Torch* | ![torch](images/icons/torch.png) | — | — | Mindmap icon for Torch. Used to represent the torch concept in Math4AI diagrams. |
+| **torchrun**<br>*Torchrun* | ![torchrun](images/icons/torchrun.png) | — | — | Mindmap icon for Torchrun. Used to represent the torchrun concept in Math4AI diagrams. |
+| **tpu**<br>*Tpu* | ![tpu](images/icons/tpu.png) | — | — | Mindmap icon for Tpu. Used to represent the tpu concept in Math4AI diagrams. |
+| **training**<br>*Training* | ![training](images/icons/training.png) | — | — | Mindmap icon for Training. Used to represent the training concept in Math4AI diagrams. |
+| **vllm**<br>*Vllm* | ![vllm](images/icons/vllm.png) | — | — | Mindmap icon for Vllm. Used to represent the vllm concept in Math4AI diagrams. |
+| **xgrammar**<br>*Xgrammar* | ![xgrammar](images/icons/xgrammar.png) | — | — | Mindmap icon for Xgrammar. Used to represent the xgrammar concept in Math4AI diagrams. |
+| **zero1**<br>*Zero1* | ![zero1](images/icons/zero1.png) | — | — | Mindmap icon for Zero1. Used to represent the zero1 concept in Math4AI diagrams. |
+| **zero2**<br>*Zero2* | ![zero2](images/icons/zero2.png) | — | — | Mindmap icon for Zero2. Used to represent the zero2 concept in Math4AI diagrams. |
+| **zero_plus_plus**<br>*Zero Plus Plus* | ![zero_plus_plus](images/icons/zero_plus_plus.png) | — | — | Mindmap icon for Zero Plus Plus. Used to represent the zero plus plus concept in Math4AI diagrams. |
 
 ## Neural Network Icons
 
