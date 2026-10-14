@@ -6,7 +6,7 @@ Mathicon maintains a **central icon registry** (`mathicon.common.registry`). Eve
 
 Previously, icon discovery relied on scanning `icon_utils` for `draw_*_icon` functions. The registry:
 
-- Groups icons by curriculum domain (`linear_algebra`, `calculus`, `probability`, `optimization`, `stochastics`, `legend`, `neural_network`)
+- Groups icons by domain (`linear_algebra`, `matrix`, `calculus`, `optimization`, `probability`, `stochastics`, `machine_learning`, `distributed_systems`, `neural_network`, `diagram`, `quant`)
 - Marks animatable icons (functions with a `phase` parameter or `AnimatableIcon.draw_frame`)
 - Powers `mathicon-preview-icons`, the icon GUI, and auto-exports in `mathicon.__init__`
 - Connects icons to book chapters via `icon_metadata.json` and `build_book_context`

@@ -11,7 +11,7 @@ It is designed for long-form projects (books, lecture notes, technical reports) 
 - Vector helpers for arrows and affine grids
 - Figure output helpers aligned with chapter-script workflows
 - JSON-driven mindmap and poster rendering with built-in and local custom icons
-- Central icon registry (~180 icons) for linear algebra, optimization, probability, stochastics, and legend matrix types
+- Central icon registry (336 icons) for linear algebra, calculus, optimization, probability, stochastics, machine learning, distributed systems, diagrams, and quant finance (`mathicon.quant`)
 - CLI tools: `mathicon-preview-icons`, `mathicon-gui`
 - Multi-format icon export (PNG, SVG, PDF, WebP, GIF)
 

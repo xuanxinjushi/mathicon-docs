@@ -85,6 +85,16 @@ CATEGORY_SECTIONS = [
         "Parallel training, LLM serving, accelerators, and cluster infrastructure.",
     ),
     (
+        "diagram",
+        "Diagram Icons",
+        "General-purpose flow and structure diagrams: pipelines, DAGs, state machines, and feedback loops.",
+    ),
+    (
+        "quant",
+        "Quant Finance",
+        "Rates, risk measures, options, and mortgage / MBS concepts, from the `mathicon.quant` subpackage.",
+    ),
+    (
         "neural_network",
         "Neural Network Icons",
         "Architecture diagrams; `nn_mlp` uses a Manim forward-pass flow animation (GIF + MP4).",
